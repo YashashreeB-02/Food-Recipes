@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <style>
+        input[type="submit"]{
+            background-color: green;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            transition: 0.5s;
+           
+        }
+        h1{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:30px;
+
+        }
+        body{
+            background-image: url(food.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 22px;
+            justify-content: center;
+            display: flex;
+            
+        }
+        form{
+            border-radius: 10px;
+            background-color:white(128, 128, 128);
+           
+        }
+    
+    
+</style>
+
+    </head>
+    <body>
+        <form>
+            <h1>REVIEW</h1><br>
+            <label for="name">Name:</label><br>
+            <input type="text"  id="name" name="name"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="recipe">Any recipe which you want me to share:</label><br>
+            <textarea name="recipe" id="recipe" cols="30" rows="4" name="recipe"></textarea><br>
+
+            <label for="recipe 2">Any recipe you would like to share with us:</label><br>
+            <textarea name="recipe 2" id="recipe 2" cols="30" rows="10" name="recipe 2"></textarea><br>
+
+            
+            <input type="submit">
+        </form>
+
+              <script>
+                document.querySelector("form").addEventListener("submit",function(event){
+                    event.preventDefault();
+
+                    alert("Thank you! Your review has been submited.");
+
+                    this.submit();
+                }); 
+              </script>  
+           
+        </form>
+
+    </body>
+    </html>
